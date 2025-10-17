@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/6524ed4341.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando & Mercedes Wedding Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #FBF9F6;
+            color: #5E503F;
+        }
+        .font-script {
+            font-family: 'Pinyon Script', cursive;
+        }
+        .bg-beige {
+            background-color: #899d7a;
+        }
+        .text-brown {
+            color: #5E503F;
+        }
+        .text-green {
+            color: #899d7a;
+        }
+        .btn-custom {
+            background-color: #899d7a;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .btn-custom:hover {
+            background-color: #798c6a;
+            border: 1px solid transparent;
+        }
+        .hero-text {
+            /* Ajustado el tamaño de fuente para ser responsivo en diferentes pantallas */
+            font-size: 3.5rem; 
+            letter-spacing: 0.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        @media (min-width: 640px) {
+             .hero-text {
+                font-size: 5rem;
+            }
+        }
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.0); 
+            backdrop-filter: blur(0px);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            text-align: center;
+            color: white; 
+        }
+        .date-number {
+            font-size: 6rem;
+            line-height: 1;
+            font-weight: 600;
+        }
+        .date-month {
+            font-size: 6rem;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
+        .date-year {
+            font-size: 6rem;
+            line-height: 1;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+        .icon-wrapper {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ESTILOS PARA EL MODAL DE REGALOS (TRANSICIÓN MINIMALISTA) */
+        #gift-list-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 50; 
+            opacity: 0;
+            transform: scale(0.98);
+            transition: opacity 300ms ease-out, transform 300ms ease-out, visibility 300ms;
+            visibility: hidden;
+            overflow-y: auto;
+        }
+        #gift-list-modal.active {
+            opacity: 1;
+            transform: scale(1);
+            visibility: visible;
+        }
+        .modal-content {
+             max-width: 42rem;
+             margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="w-full max-w-2xl mx-auto">
+
+    <!-- MODAL DE LISTA DE REGALOS (Nueva "página" JS) --><div id="gift-list-modal" class="bg-white p-8">
+        <div class="modal-content min-h-screen flex flex-col items-center justify-start py-20 px-8 text-center">
+            
+            <button id="close-gift-list" class="absolute top-4 left-4 text-green btn-custom bg-beige text-white hover:bg-brown/80 flex items-center p-3 px-6">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Regresar
+            </button>
+            
+            <h2 class="font-script text-6xl mb-4 text-green">Lista de Regalos</h2>
+            <!-- TEXTO DE REGALOS MODIFICADO -->
+            <p class="text-xl mb-8 text-brown">Si deseas obsequiarnos algo físico, te compartimos algunas sugerencias. Los enlaces son sólo opciones; si prefieres adquirirlo en otro lugar, será igualmente especial. ¡Muchas gracias!</p>
+
+            <div class="max-w-md mx-auto w-full">
+                <div class="text-left text-brown">
+                    <h3 class="text-2xl font-bold tracking-widest text-center mb-4 text-green">Regalos Físicos</h3>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-brown">
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Mandolina para cocina</span>
+                            <a href="https://www.mercadolibre.com.mx/mueller-mu-mando-mandolina-austria-v-pro-con-5-cuchillas-ajustables-blanca-y-gris/p/MLM34114649?pdp_filters=item_id%3AMLM2031188213&from=gshop&matt_tool=13716267&matt_word=&matt_source=google&matt_campaign_id=22118382853&matt_ad_group_id=170611934302&matt_match_type=&matt_network=g&matt_device=c&matt_creative=729602345667&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735123861&matt_product_id=MLM34114649-product&matt_product_partition_id=2389821882681&matt_target_id=aud-1929088642010:pla-2389821882681&cq_src=google_ads&cq_cmp=22118382853&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22118382853&gbraid=0AAAAAoTLPrKRxeY4I_nsYvDNElZOspT5S&gclid=CjwKCAjwuePGBhDYARIsAIGCVS1XQEIHpVPUym3dTWipjxaY-_KwJxvr7iEsFOYm5bAUbD_YFXFBNBRoCIZcQAvD_BwE" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Olla de cerámica 3L libre de tóxicos</span>
+                            <a href="https://articulo.mercadolibre.com.mx/MLM-2893717136-cacerola-24cm-5l-mercedes-kitchen-antiadherente-ceramico-_JM?searchVariation=179884940668#polycard_client=search-nordic&searchVariation=179884940668&search_layout=grid&position=3&type=item&tracking_id=a9cabf25-1914-4e2e-99cc-c6fcc32707e9" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Colador de yogurt griego</span>
+                            <a href="https://www.mercadolibre.com.mx/stainless-steel-greek-yogurt-strainer-fine-mesh-whey-separat/p/MLM2009685971?pdp_filters=item_id%3AMLM2469540927&from=gshop&matt_tool=19313137&matt_word=&matt_source=google&matt_campaign_id=22187016448&matt_ad_group_id=173888141669&matt_match_type=&matt_network=g&matt_device=c&matt_creative=731217601636&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735088283&matt_product_id=MLM2009685971-product&matt_product_partition_id=2397368632720&matt_target_id=aud-1929088642010:pla-2397368632720&cq_src=google_ads&cq_cmp=22187016448&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22187016448&gbraid=0AAAAAoTLPrKdWxve5Agwk1E09cAUWcoh5&gclid=Cj0KCQjw3OjGBhDYARIsADd-uX4kiGhYk0cbllrPMuoCWgpTYgapMOACHWhaaw9MFE18IEeLje_UvJoaAgm_EALw_wcB" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Set de tablas de acero inoxidable</span>
+                            <a href="https://articulo.mercadolibre.com.mx/MLM-1346142187-tabla-para-picar-de-acero-inoxidable-con-funcion-de-afilado-_JM#polycard_client=recommendations_vip-pads&reco_backend=recos-pads-retrieval-4stars&reco_model=rk_ent_v2_retsys_4stars&reco_client=vip-pads&reco_item_pos=0&reco_backend_type=low_level&reco_id=0ceb0d21-2e95-45d7-a904-07b4073d6954&is_advertising=true&ad_domain=VIPCORE_RECOMMENDED&ad_position=1&ad_click_id=OWUzMWI2MTgtOTM5Zi00MjFmLTk5ZTktYmI4ZDRmZjhlMGY3" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Nutribullet Pro 900 Watts</span>
+                            <a href="https://www.mercadolibre.com.mx/personal-blender-nutribullet-pro-900-watts-champana-12-pzas-color-rosa-palido/p/MLM39442679?pdp_filters=item_id%3AMLM2367918089&from=gshop&matt_tool=33846241&matt_word=&matt_source=google&matt_campaign_id=22114637438&matt_ad_group_id=170611955182&matt_match_type=&matt_network=g&matt_device=c&matt_creative=729602347362&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735123861&matt_product_id=MLM39442679-product&matt_product_partition_id=2390507780358&matt_target_id=aud-1929088642010%3Apla-2390507780358&cq_src=google_ads&cq_cmp=22114637438&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22114637438&gbraid=0AAAAAoTLPrJiSquuD5J6fWhYx6VFb9Hfq&gclid=Cj0KCQjwjL3HBhCgARIsAPUg7a6seRUgbpit6s0PgZhJMrphFTN40OW9eK2RYY7SD06x35UZ_vLehbsaAq3MEALw_wcB" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Set de cajas de almacenamiento de tela con tapa y cierre</span>
+                            <a href="https://www.mercadolibre.com.mx/caja-de-almacenamiento-con-cierre-colcha-movil-cesta-de-vi/p/MLM2009061875#polycard_client=search-nordic&search_layout=grid&position=21&type=product&tracking_id=fb716654-4b52-4eef-b498-8b0d5d929eac&wid=MLM3100334654&sid=search" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Set de tuppers herméticos de vidrio (apto para microondas)</span>
+                            <a href="https://www.mercadolibre.com.mx/easyware-premium-4-contenedores-grandes-de-vidrio-p-comida-color-negro/p/MLM42694112?pdp_filters=item_id:MLM3448025056#is_advertising=true&searchVariation=MLM42694112&backend_model=search-backend&position=19&search_layout=grid&type=pad&tracking_id=30d1e4a5-dcf5-4897-8773-d2bef146c316&ad_domain=VQCATCORE_LST&ad_position=19&ad_click_id=MDdlOGMxZTktMTM5ZC00NTJhLWJkNTMtOWZjYzc4NmZlY2Ew" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Aspiradora multifuncional con cable</span>
+                            <a href="https://www.mercadolibre.com.mx/welikera-mano-multifuncional-mango-largo-aspiradora-with-cable-50-metros-capacity-15l-color-black-600w-gran-succion-18kpa/p/MLM48916156?pdp_filters=item_id:MLM3657194502#is_advertising=true&searchVariation=MLM48916156&backend_model=search-backend&position=1&search_layout=stack&type=pad&tracking_id=9895e0cc-193a-45b7-b618-c53e90640d7c&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=ZjRiNjRlZjgtNTkzYi00ZDlhLWE1MDMtM2E2MzU1ZmYzNjVk" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Taladro atornillador inalámbrico</span>
+                            <a href="https://www.mercadolibre.com.mx/taladro-atornillador-percutor-inalambrico-miwod-21v-2-baterias-li-ion-sin-escobillas-mandril-10mm/p/MLM43158830?pdp_filters=item_id:MLM2182040437#is_advertising=true&searchVariation=MLM43158830&backend_model=search-backend&position=2&search_layout=grid&type=pad&tracking_id=9dfe0391-706d-4f28-a893-f11112ca6c84&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=YWFkZTFkNmUtMTdhOC00OGMzLWFkYTEtNjEyMGI1NDRhN2Rl" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Taladro destornillador inalámbrico</span>
+                            <a href="https://www.mercadolibre.com.mx/taladro-destornillador-inalambrico-kit-de-taladros-impacto-ruomu-xmmxf034ye-color-naranja/p/MLM37174616#polycard_client=search-nordic&search_layout=grid&position=6&type=product&tracking_id=aaeb7e0e-a2f4-45c7-8cdd-6ce2ebecc02e&wid=MLM3100334654&sid=search" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Ecofiltro Purificador de Agua Mazari 30L</span>
+                            <a href="https://ecofiltro.mx/products/ecofiltro-purificador-dispensador-y-filtro-de-agua-de-polipropileno-mazari-grande-30-l" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Regadera con filtro de agua AUGA</span>
+                            <a href="https://www.auga.com.mx/products/cabezal-de-regadera-con-filtro-auga" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                        <!-- TEXTO DE REGALO MODIFICADO -->
+                        <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <span>Sistema de limpieza Vileda</span>
+                            <a href="https://www.mercadolibre.com.mx/trapeador-microfibra-cubeta-con-pedal-vileda-easy-wring/p/MLM19951479?has_official_store=false&highlight=true&headerTopBrand=true#polycard_client=search-nordic&search_layout=grid&position=1&type=product&tracking_id=39ad6377-e2bb-4b9f-bed9-5a7e2428880d&wid=MLM1856841133&sid=search" target="_blank" class="text-green underline hover:text-brown/70 transition duration-150 text-base mt-1 sm:mt-0 sm:ml-4 font-medium">Ver regalo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- FIN MODAL DE LISTA DE REGALOS --><!-- Hero Section --><!-- Se eliminó h-screen para que la altura sea determinada por la imagen (ancho 100%, relación de aspecto preservada) --><header class="relative w-full flex flex-col items-center justify-center text-white text-center bg-black">
+        
+        <!-- Contenedor principal de la imagen y el overlay. Toma la altura de la imagen. --><div class="relative w-full z-0">
+            
+            <!-- Overlay de opacidad que cubre la imagen completamente --><div style="opacity: 0;" class="absolute inset-0 bg-black  z-10"></div> 
+            
+            <!-- IMAGEN PRINCIPAL: w-full y h-auto (implícito) aseguran 100% de ancho y mantienen el ratio original (sin recorte) --><img src="https://acidwaves.art/weddingcover.webp" alt="Orlando and Mercedes" class="w-full block">
+        </div>
+        
+        <!-- Contenido (nombres y contador) posicionado de forma absoluta sobre la imagen en la parte inferior. --><div class="absolute inset-x-0 bottom-0 top-0 z-20 flex flex-col items-center justify-end p-4 sm:p-8">
+            <h1 class="font-bold hero-text">ORLANDO</h1>
+            <h1 class="font-bold hero-text">&</h1>
+            <h1 class="font-bold hero-text">MERCEDES</h1>
+            <div class="mt-8">
+                <p class="text-lg tracking-widest">SAVE THE DATE</p>
+                <div id="countdown" class="grid grid-cols-4 gap-4 mt-4">
+                    <div class="countdown-box">
+                        <span id="days" class="text-3xl font-bold">0</span>
+                        <span class="text-xs">Días</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="hours" class="text-3xl font-bold">0</span>
+                        <span class="text-xs">Horas</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="minutes" class="text-3xl font-bold">0</span>
+                        <span class="text-xs">Minutos</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="seconds" class="text-3xl font-bold">0</span>
+                        <span class="text-xs">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Text --><section style="margin-top: 6%;" class=" px-8 text-center">
+        <p class="text-2xl leading-relaxed text-green">
+            El corazón siente cuando es correcto.
+        </p>
+    </section>
+
+    <!-- Date Section --><section style="margin-bottom: 6%;" class=" px-8 flex items-center justify-center text-green">
+        <span class="date-year">2025</span>
+        <div class="flex items-center">
+            <span class="date-number">21</span>
+            <span class="date-month ml-8">DIC</span>
+        </div>
+    </section>
+    
+    <!-- Parents Section --><section class="bg-beige py-20 px-8 text-center text-white">
+        <h2 class="font-script text-6xl mb-12">En compañía de</h2>
+        <div class="grid md:grid-cols-2 gap-12 text-xl">
+            <div>
+                <h3 class="font-semibold tracking-widest mb-4">PADRES DE LA NOVIA</h3>
+                <p>Maria Isabel Limón Ramirez</p>
+                <p>Gil Ricardo Ruiz y Alvarado</p>
+            </div>
+            <div>
+                <h3 class="font-semibold tracking-widest mb-4">PADRES DEL NOVIO</h3>
+                <p>Leonor del Carmen Flores Mota</p>
+                <p>Orlando Alfonso Pérez Alayón †</p>
+            </div>
+        </div>
+         <div class="mt-12">
+            <h3 class="font-semibold tracking-widest mb-4">Agradecimientos especiales a:</h3>
+            <p class="max-w-xl mx-auto text-lg"> Patricia Ortíz Flores, Familia Flores Mota y todas las personas que hicieron posible que este día sea especial.</p>
+        </div>
+    </section>
+
+    <!-- Ceremony Section -->
+    <section style="margin-top: 6%;" class=" text-center text-green">
+         <img src="https://acidwaves.art/o&m5.webp" alt="Reception placeholder" class="w-full h-64 object-cover mb-12  shadow-md">
+        <h2 class="font-script text-6xl mb-4">Recepción</h2>
+        <h3 class="text-3xl tracking-widest font-bold mb-4">QUINTA TAANAJ</h3>
+        <p class="text-lg">Calle 12 Num. 124, entre 21,</p>
+        <p class="text-lg">97302 Dzityá, Yucatán.</p>
+        <!-- MODIFICADO: Cambiado a enlace con target="_blank" para abrir Google Maps -->
+        <a href="https://maps.app.goo.gl/nizDSrRsq9h4mJp36" target="_blank" class="btn-custom mt-8 inline-block">CÓMO LLEGAR</a>
+    </section>
+
+    <!-- Codigo de vestimenta Section --><section style="margin-top: 6%; margin-bottom: 6%;" class=" text-center text-brown">
+         <img src="https://acidwaves.art/o&m2.webp" alt="CDV placeholder" class="w-full h-64 object-cover mb-12  shadow-md">
+        <h2 class="font-script text-6xl mb-4 text-green">Código de Vestimenta</h2>
+        <h3 class="text-lg font-semibold">Mujeres: </h3>
+        <!-- TEXTO DE VESTIMENTA MODIFICADO -->
+        <p class="text-lg">Vestidos en gama color Rosa, Lilas, Vino, Salvia o gama de Verdes, incluso Azul Pastel.</p> 
+        <img src="https://acidwaves.art/clp2.webp" alt="Placeholder para vestidos" class="w-full max-w-sm mx-auto h-auto object-cover my-4 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold mt-6">Hombres: </h3>
+        <p class="text-lg">Traje opcional. </p>
+        <p class="text-lg">Camisa Azul, Blanca, Beige, Verde claro/pistache.</p> 
+        <p class="text-lg">Corbata opcional.</p>
+        <img src="https://acidwaves.art/clp1.webp" alt="Placeholder para atuendo de hombres" class="w-full max-w-sm mx-auto h-auto object-cover my-4 rounded-lg shadow-md">
+    </section>
+    
+    <!-- Itinerary Section (ACTUALIZADO) --><section class="bg-beige py-20 px-8 text-center text-white">
+        <h2 class="font-script text-6xl mb-12">Minuto a Minuto</h2>
+        <div class="space-y-10 max-w-sm mx-auto">
+            <!-- 1. 04:00 p.m. - Entrada de los Novios (Corazón) --><div class="flex items-start text-left">
+                <div class="icon-wrapper mr-6 flex-shrink-0 flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">04:00 p.m.</p>
+                    <p class="text-lg mt-1">Un comienzo entre pétalos.<br>Entrada de los novios.</p>
+                </div>
+            </div>
+            <!-- 2. 04:30 p.m. - Fotografía con invitados (Cámara Retro) --><div class="flex items-start text-left">
+                <div class="icon-wrapper mr-6 flex-shrink-0 flex items-center justify-center">
+                    <i class="fa-solid fa-camera-retro text-3xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">04:30 p.m.</p>
+                    <p class="text-lg mt-1">Sesión de fotos con los invitados. Te agradecemos tu puntualidad para tomarnos la foto contigo.</p>
+                </div>
+            </div>
+            <!-- 3. 06:00 p.m. - Inicio de la Celebración (Música) --><div class="flex items-start text-left">
+                <div class="icon-wrapper mr-6 flex-shrink-0 flex items-center justify-center">
+                   <i class="fa-solid fa-music text-3xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">06:00 p.m.</p>
+                    <p class="text-lg mt-1">Inicio de la Celebración.</p>
+                </div>
+            </div>
+            <!-- 4. 07:00 p.m. - Platillo Principal (Cubiertos) --><div class="flex items-start text-left">
+                <div class="icon-wrapper mr-6 flex-shrink-0 flex items-center justify-center">
+                    <i class="fa-solid fa-utensils text-3xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">07:00 p.m.</p>
+                    <p class="text-lg mt-1">Platillo principal de la celebración.</p>
+                </div>
+            </div>
+            <!-- 5. 08:00 p.m. - Brindis, Vino y Pastel (Copa de vino) --><div class="flex items-start text-left">
+                <div class="icon-wrapper mr-6 flex-shrink-0 flex items-center justify-center">
+                    <i class="fa-solid fa-wine-glass text-3xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">08:00 p.m.</p>
+                    <p class="text-lg mt-1">Brindis, Vino y Pastel.</p>
+                </div>
+            </div>
+            <!-- 6. 10:00 p.m. - Término de la celebración (Reloj) --><div class="flex items-start text-left">
+                <div class="icon-wrapper mr-6 flex-shrink-0 flex items-center justify-center">
+                    <i class="fa-solid fa-heart text-3xl"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">10:00 p.m.</p>
+                    <p class="text-lg mt-1">El cierre de un día que quedará en nuestra historia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gifts Section --><section style="margin-top: 6%; margin-bottom: 6%;" class=" px-8 text-center text-green">
+        <h2 class="font-script text-6xl mb-4">Regalos</h2>
+        <p class="text-xl mb-12">¡El regalo es opcional, lo más importante para nosotros, es tu compañía!</p>
+        <div class="max-w-md mx-auto grid md:grid-cols-1 ">
+            <!-- Sección de Regalos Físicos: Texto simplificado --><div class="text-center">
+                <h3 class="text-2xl font-bold tracking-widest text-center mb-4">Regalos Físicos</h3>
+                <p class="text-center mb-4 text-green">
+                    Estaremos encantados de recibir tu obsequio el día de la boda, para ello, hemos creado esta pequeña lista de deseos.
+                </p>
+                <button id="open-gift-list" class="btn-custom mt-4">VER LISTA DE REGALOS</button>
+            </div>
+            <!-- Sección de Transferencias --><div class="mt-8 text-center max-w-xs mx-auto">
+                <h3 class="text-2xl font-bold tracking-widest mb-4">Transferencias</h3>
+                <p class="text-base">Si gustas apoyarnos en nuestros planes y metas puedes tranferirnos a la cuenta de:</p>
+                <p class="mt-2 text-lg font-semibold">Orlando Pérez Flores</p>
+                <p class="mt-2 text-base">Mandanos un WhatsApp y recibe los datos bancarios</p>
+                <!-- Botón de WhatsApp --><a href="https://wa.me/529993422063" target="_blank" class="btn-custom mt-4 block w-full text-center">
+                    WHATSAPP
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Adults only --><section class="bg-beige py-20 px-8 text-center text-white">
+        <h2 class="font-script text-6xl mb-4">¡Te agradecemos!</h2>
+        <p class="text-xl leading-relaxed max-w-md mx-auto">Nuestro cariño no tiene límites, sin embargo te pedimos respetar el número de invitados que indica tu pase. ¡Esperamos vivir otros momentos junto a toda la familia!</p>
+    
+    </section>
+
+    <!-- Contact Section --><footer style="margin-top: 6%; margin-bottom: 6%;" class="  text-center text-brown">
+        <img src="https://acidwaves.art/ring.webp" alt="Contact placeholder" class="w-full h-64 object-cover mb-12 shadow-md">
+        <h2 class="text-3xl font-bold tracking-widest text-green">CONTACTA A</h2>
+        <h2 class="text-3xl font-bold tracking-widest mb-4 text-green">ORLANDO & MERCEDES</h2>
+        <!-- Texto actualizado para Confirmación de Asistencia --><p class="text-xl mb-6 text-green">Para nosotros es muy importante saber si podrás acompañarnos. Por favor, haz clic en el botón de "Confirmar asistencia" antes del 5 de Diciembre.</p>
+        
+        <div class="flex justify-center mb-8">
+        </div>
+        
+        <!-- Botón CONFIRMAR ASISTENCIA: MODIFICADO para incluir el texto pre-escrito -->
+        <a href="https://wa.me/529993422063?text=Confirmo%20mi%20asistencia%20a%20tu%20boda%21" target="_blank" class="btn-custom block w-full max-w-xs mx-auto mb-4 text-center">CONFIRMAR ASISTENCIA</a>
+        
+        <!-- Nuevo texto antes del botón ENVIAR MENSAJE --><p class="text-lg mt-8 mb-4 text-green max-w-xs mx-auto">
+            Si tienes alguna duda sobre el evento, la lista de regalos, la logística o cualquier otro detalle, haz clic en "Enviar Mensaje"
+        </p>
+
+        <!-- Botón ENVIAR MENSAJE --><a href="https://wa.me/529993422063" target="_blank" class="btn-custom block w-full max-w-xs mx-auto text-center">ENVIAR MENSAJE</a>
+    </footer>
+
+    <script>
+        // Use a global variable for the interval to avoid redeclaration errors
+        if (window.weddingCountdown) {
+            clearInterval(window.weddingCountdown);
+        }
+
+        // Set the date we're counting down to
+        const countDownDate = new Date("Dec 21, 2025 16:00:00").getTime();
+
+        // Update the count down every 1 second
+        window.weddingCountdown = setInterval(function() {
+
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the corresponding elements
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(window.weddingCountdown);
+                document.getElementById("countdown").innerHTML = "<div class='col-span-4 text-center text-xl'>¡Llegó el gran día!</div>";
+            }
+        }, 1000);
+
+        // Lógica JavaScript para el Modal de Regalos
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('gift-list-modal');
+            const openBtn = document.getElementById('open-gift-list');
+            const closeBtn = document.getElementById('close-gift-list');
+            const body = document.body;
+
+            const openModal = () => {
+                modal.classList.add('active');
+                body.style.overflowY = 'hidden';
+                modal.scrollTop = 0; 
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+                body.style.overflowY = 'auto'; 
+            };
+
+            if (openBtn && modal && closeBtn) {
+                openBtn.addEventListener('click', openModal);
+                closeBtn.addEventListener('click', closeModal);
+            }
+        });
+    </script>
+
+</body>
+</html>
